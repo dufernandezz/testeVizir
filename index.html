@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="telzir.css">
+        <title>Telzir!</title>
+    </head>
+    <body>
+        <div id="root">
+            <label id="">Origem</label>
+            <select id="Origem">
+                <option value="" disabled selected>DDD origem</option>
+                <option value="11">011</option>
+                <option value="16">016</option>
+                <option value="17">017</option>
+                <option value="18">018</option>
+            </select>
+            
+            <label>Destino</label>
+            <select disabled id="Destino">
+                <option value="" disabled selected>DDD Destino</option>
+               
+            </select>
+
+            <label>Plano</label>
+            <select id="Plano">
+                    <option value="" disabled selected>Plano</option>
+                    <option value="30">FaleMais 30</option>
+                    <option value="60">FaleMais 60</option>
+                    <option value="120">FaleMais 120</option>
+            </select>
+            <label> Minutos</label>
+            <input type="number"id="Minutos" min="1" max="9999">
+
+            <button id="Calcular"  onclick="exibirResultados()">Calcular</button>
+        
+
+            <label> Preco com FaleMais</label>
+            <span id="precoComPlano"></span>
+            <label> Preco sem FaleMais</label>
+            <span id="precoSemPlano"></span>
+            
+        </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

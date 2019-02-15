@@ -78,4 +78,6 @@ let exibirResultados = () => {
     let resultadoSemPlano = calcularSemPlano(ligacao.minutos, ligacao.tarifas[codTarifa])
     let resultadoComPlano = calcularComPlano(ligacao.minutos, ligacao.tarifas[codTarifa], ligacao.plano)
     console.log(resultadoSemPlano, resultadoComPlano)
+    document.getElementById("precoSemPlano").innerHTML ="R$ " + resultadoSemPlano
+    document.getElementById("precoComPlano").innerHTML ="R$ " + resultadoComPlano
 } 

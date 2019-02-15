@@ -2,47 +2,71 @@
 <html>
     <head> 
         <meta charset="utf-8">
-        <link rel="stylesheet" href="telzir.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <title>Telzir!</title>
     </head>
     <body>
-        <div id="root">
-            <label id="">Origem</label>
-            <select id="Origem">
-                <option value="" disabled selected>DDD origem</option>
-                <option value="11">011</option>
-                <option value="16">016</option>
-                <option value="17">017</option>
-                <option value="18">018</option>
-            </select>
-            
-            <label>Destino</label>
-            <select disabled id="Destino">
-                <option value="" disabled selected>DDD Destino</option>
-               
-            </select>
-
-            <label>Plano</label>
-            <select id="Plano">
-                    <option value="" disabled selected>Plano</option>
-                    <option value="30">FaleMais 30</option>
-                    <option value="60">FaleMais 60</option>
-                    <option value="120">FaleMais 120</option>
-            </select>
-            <label> Minutos</label>
-            <input type="number"id="Minutos" min="1" max="9999">
-
-            <button id="Calcular"  onclick="exibirResultados()">Calcular</button>
-        
-
-            <label> Preco com FaleMais</label>
-            <span id="precoComPlano"></span>
-            <label> Preco sem FaleMais</label>
-            <span id="precoSemPlano"></span>
-            
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">Telzir - Planos de telefone de acordo com o que você precisa!</a>
+         </nav>
+         <div class="row d-sm-none d-md-block">
+            <div class="bloco1 container-fluid ">
+                <h2 class="p-5 text-center">Somos uma das maiories empresas de telefonia do Brasil e oferecemos planos com excelente promoções para nossos clientes. Com a Telzir! você pode escolher a quantidade de minutos e uma opção de plano que se adequa a sua necessidade</h2>
+            </div>
         </div>
-
-
-    <script type="text/javascript" src="script.js"></script>
+        <div id="root" class="container">
+            <div class="row">
+                <div class="col col-lg-6 col-sm-12">
+                    <label>DDD Origem</label>
+                    <select id="Origem" class="custom-select">
+                        <option value="" disabled selected>DDD origem</option>
+                        <option value="11">011</option>
+                        <option value="16">016</option>
+                        <option value="17">017</option>
+                        <option value="18">018</option>
+                    </select>
+                </div>
+                <div class="col col-lg-6 col-sm-12">
+                    <label>DDD Destino</label>
+                    <select disabled id="Destino" class="custom-select"> 
+                        <option value="" disabled selected>DDD Destino</option>
+                    </select>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col col-lg-6 col-sm-12">
+                        <label>Plano</label>
+                        <select id="Plano" class="custom-select">
+                                <option value="" disabled selected>Plano</option>
+                                <option value="30">FaleMais 30</option>
+                                <option value="60">FaleMais 60</option>
+                                <option value="120">FaleMais 120</option>
+                        </select>
+                    </div>
+                    <div class="col col-lg-6 col-sm-12">
+                        <label>Minutos</label></br>
+                        <input type="number"id="Minutos" min="1" max="9999">
+                    </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col col-lg-12 text-center">            
+                    <button id="Calcular" class="btn btn-primary"  onclick="exibirResultados()">Calcular</button>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col col-lg-6 text-center">            
+                            <label> Preco com FaleMais</label>
+                            <div id="precoComPlano"></div>
+                    </div>
+                    <div class="col col-lg-6 text-center">            
+                            <label> Preco sem FaleMais</label>
+                            <div id="precoSemPlano"></div>
+                    </div>
+                </div>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

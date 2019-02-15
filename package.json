@@ -1,0 +1,26 @@
+{
+  "name": "testevizir",
+  "version": "1.0.0",
+  "description": "Teste para empresa Vizir",
+  "main": "script.js",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "ruby": "^0.6.1",
+    "sass": "^1.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dufernandezz/testeVizir.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dufernandezz/testeVizir/issues"
+  },
+  "homepage": "https://github.com/dufernandezz/testeVizir#readme"
+}

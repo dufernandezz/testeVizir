@@ -1,4 +1,4 @@
 
-Olá Obrigado pela oportunidade de participar do processo seletivo.
+Olá
 
 Para rodar o projeto não é necessário instalar nenhum dependência
